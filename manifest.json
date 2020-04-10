@@ -1,7 +1,7 @@
 {
-  "name": "gopher",
+  "name": "Copy Go Package",
   "version": "0.1",
-  "description": "A Chrome Extension for gophers",
+  "description": "Copy the Go package path into clipboard",
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "background": {
     "scripts": ["background.js"],
@@ -10,18 +10,20 @@
   "page_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/get_started16.png",
-      "32": "images/get_started32.png",
-      "48": "images/get_started48.png",
-      "128": "images/get_started128.png"
+      "16": "images/gopher-front-16.png",
+      "32": "images/gopher-front-32.png",
+      "48": "images/gopher-front-48.png",
+      "64": "images/gopher-front-64.png",
+      "128": "images/gopher-front-128.png"
     }
   },
   "options_page": "options.html",
   "icons": {
-    "16": "images/get_started16.png",
-    "32": "images/get_started32.png",
-    "48": "images/get_started48.png",
-    "128": "images/get_started128.png"
+    "16": "images/gopher-front-16.png",
+    "32": "images/gopher-front-32.png",
+    "48": "images/gopher-front-48.png",
+    "64": "images/gopher-front-64.png",
+    "128": "images/gopher-front-128.png"
   },
   "manifest_version": 2
 }

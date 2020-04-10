@@ -6,6 +6,10 @@ body{
   width: 30rem;
   padding: 0.6rem;
   background-color: rgb(248, 249, 249);
+  background-image: url('./images/gopher-front.svg');
+  background-position: bottom -10px right -10px;
+  background-repeat: no-repeat;
+  background-size: 128px 128px;
   color: rgb(31, 30, 30);
 }
 body>*:first-child {
@@ -23,7 +27,7 @@ h1 {
 
 [role="menu"] {
   padding: 0.2rem;
-  background-color: rgb(253, 252, 252);
+  background-color: rgba(253, 252, 252, 0.8);
 }
 
 [role="menuitem"] {
@@ -33,11 +37,11 @@ h1 {
 }
 
 [role="menuitem"]:hover {
-  background-color: #6ec6ff;
+  background-color: rgb(140, 197, 231);
 }
 
 [role="menuitem"]:active {
-  background-color: #2196f3;
+  background-color: #5a95b5;
   position:relative;
   top: 1px;
   left: 1px;
@@ -51,6 +55,19 @@ li[role="menuitem"]:before {
   content: '\1f4cb  '
 }
 
+address {
+  font-size: 8pt;
+  margin: 0;
+}
+address a {
+  color: inherit;
+}
+address a:hover {
+  color: rgb(140, 197, 231);
+}
+address a:active {
+  color: #5a95b5;
+}
     </style>
     <script src="popup.js"></script>
   </head>
@@ -58,5 +75,8 @@ li[role="menuitem"]:before {
     <h1>Copy the Go Package</h1>
     <ul role="menu" id="presentation-selector">
     </ul>
+    <address>
+      <a href="https://github.com/kyoh86/chromext-copy-go-package/#LICENSE">LICENSE</a>
+    </address>
   </body>
 </html>

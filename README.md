@@ -1,18 +1,13 @@
-# gopher
+# Copy Go package
 
-A Chrome Extension for gophers
-
-[![Go Report Card](https://goreportcard.com/badge/github.com/kyoh86/gopher)](https://goreportcard.com/report/github.com/kyoh86/gopher)
-[![Coverage Status](https://img.shields.io/codecov/c/github/kyoh86/gopher.svg)](https://codecov.io/gh/kyoh86/gopher)
-
-## Install
-
-```
-go get github.com/kyoh86/gopher
-```
+A Chrome Extension to copy Go package path into clipboard
 
 # LICENSE
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg)](http://www.opensource.org/licenses/MIT)
 
-This is distributed under the [MIT License](http://www.opensource.org/licenses/MIT).
+This chrome extension is distributed by kyoh86 (https://kyoh86.dev) under the [MIT License](http://www.opensource.org/licenses/MIT).
+
+Go gopher was designed by Renee French (http://reneefrench.blogspot.com) under the Creative Commons 3.0 Attributions license.
+
+Go gopher icon was created by Takuya Ueda (twitter.com/tenntenn) under the Creative Commons 3.0 Attributions license.

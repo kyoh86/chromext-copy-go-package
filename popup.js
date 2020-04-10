@@ -1,7 +1,7 @@
-window.onload=function() {
+window.onload=() => {
 
 // add menu items when content scripts report
-chrome.runtime.onMessage.addListener(function(message) {
+chrome.runtime.onMessage.addListener(message => {
   switch (message.event) {
   case 'success':
     switch (message.source) {
@@ -37,12 +37,19 @@ function addMenu(label) {
   attr.value = "menuitem";
   item.setAttributeNode(attr);
   item.appendChild(document.createTextNode(label));
-  item.addEventListener('click', function() {
+  item.addEventListener('click', () => {
     navigator.clipboard.writeText(label)
     window.close();
   });
 
   presentationSelector.appendChild(item);
 }
+
+// enable links in popup.html
+document.querySelectorAll('a[href]').forEach(anchor => {
+  anchor.addEventListener('click', () => {
+    chrome.tabs.create({url:anchor.getAttribute('href')});
+  });
+});
 
 }; // window.onload=
