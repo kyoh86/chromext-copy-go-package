@@ -4,6 +4,12 @@ A Chrome Extension to copy Go package path into clipboard
 
 ![](./screenshot.png)
 
+# Install
+
+You can install from Chrome Web Store:
+
+https://chrome.google.com/webstore/detail/copy-go-package/kpgnlkcpmhhimbfmgdofbeffiklndjof
+
 # LICENSE
 
 This chrome extension is distributed by kyoh86 (https://kyoh86.dev) under the MIT License.
