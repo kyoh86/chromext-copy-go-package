@@ -2,6 +2,8 @@
 
 A Chrome Extension to copy Go package path into clipboard
 
+![](./screenshot.png)
+
 # LICENSE
 
 This chrome extension is distributed by kyoh86 (https://kyoh86.dev) under the MIT License.
